@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Umair Hussain</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons\favicon-16x16.png">
+  <link rel="manifest" href="icons\site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I'm Umair</h1>
+    <div class="typetext">
+      <h2 class="A">A&nbsp</h2>
+      <h2 id="text"></h2>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images\umair3-modified.png" height="300" width="300" alt="profile-img">
+      <h2>Hello</h2>
+      <p class="intro">I am a second-year computer science and statistics student currently studying at the University of Toronto. I look forward to putting my theoretical knowledge to use in the ever-growing field of IT. My main interests are software development, data analysis, and machine learning. I hope to gain practical experience and further develop my knowledge in all of these aspects.</p>
+    </div>
+    <hr>
+    <div class="projects">
+      <h2>My Projects</h2>
+      <div class="project-row">
+        <img class="left" src="images\air-pollution.gif" alt="air-pollution-img">
+        <h3>Investigating the Impact of COVID-19 on City Air Quality Using AQHI</h3>
+        <p>This project intended to determine whether COVID-19 helped improve air quality in some major cities. This analysis was done in Python using Plotly and Pandas. This project required combining multiple CSV files and cleaning them to make them usable with pandas. I looked for air quality statistics both before and after covid to compare them to each other. Since the data we had was not in the form of standard AQHI (Air Quality Health Index) we had to convert the data given into AQHI before performing any analysis. After doing so we plotted the graphs of both the AQHI before and after COVID to conclude. The full report can be found <a href="files\AQHI_Report.pdf" download>here.</a></p>
+      </div>
+      <div class="project-row">
+        <figure>
+          <img class="right" src="images\airport.gif" alt="plane-img">
+        </figure>
+        <h3>Expedia Search Data Analysis</h3>
+        <p>In this project, we worked with a dataset that contains user searches on the Expedia website. The analysis was completed using R and Jupyter Notebook. Here I aimed to answer three main questions using both hypothesis tests and linear regression. The subset of searches I was interested in were search queries likely made by couples. That is, searches looking for places that would accommodate two people. To do this, I had to clean the data by filtering out searches not made by couples and create new variables from the data to help answer the questions. The first question was whether search queries from this group had an equal number of price-reduced listings as regular-priced listings. The second question was whether people looking to stay longer received higher-rated listings than people looking to stay for a shorter time. Finally, the last question was whether there was a linear correlation between the stars a listing had and the number of reviews. We concluded that the number of price-reduced listings was not a 50/50 split. Additionally, people looking to stay longer were recommended higher-rated places. Finally, the more stars a listing had it seemed to increase the number of reviews on the listing. A comprehensive analysis can be found <a href="files\Expedia_Slides.pdf">here.</a></p>
+      </div>
+      <div class="project-row">
+        <img class="left" src="images\brick-breaker.png" alt="brick-breaker-img">
+        <h3>Brick Breaker</h3>
+        <p>In this project, I aim to recreate the game brick breaker using the MIPS Assembly language. This was done by manipulating registers and assuming the ball can only move in 4 directions. Some additional features added to the game were: it is played by 2 players, there are sound effects, a time limit, three lives, and a retry option. This project helped provide insight into memory manipulation and the importance of data-first design. The repository can be found <a href="https://github.com/Umair-H/Brick-Breaker">here.</a></p>
+      </div>
+      <div class="project-row">
+        <img class="right" src="images\scrabble.png" alt="scrabble-img">
+        <h3>Scrabble</h3>
+        <p>For this project, I worked in a large group to create the famous board game Scrabble using Java. This project helped me develop a lot of my GitHub and software design skills. In terms of Github, my group adopted a "develop" workflow. Meaning once we got a working product, we would branch off of develop to accumulate changes and make a pull request to main only after thoroughly testing within the develop branch. Doing this helped keep our main branch working and prevented situations where the game was unplayable. Moreover, we followed SOLID design principles and clean architecture to ensure the code was modifiable and expandable. We went through most of the software development lifecycle to make this project come to fruition. I led the team in managing deadlines and arranging meeting times to ensure we would have a complete product by the due date. The repository can be found <a href="https://github.com/CSC207-2022F-UofT/course-project-scrabble">here.</a></p>
+      </div>
+      <div class="project-row">
+        <img class="left" src="images\conversation.gif" alt="conversation-img">
+        <h3>Sports Tweet Classification</h3>
+        <p>In this project, we intended to train a machine learning model on sports tweets to give it the ability to determine the sport a given tweet is discussing. This was done using Twitter’s API to scrape sports-related tweets into a JSON file. We then created a new field stating the sport the tweet is actually discussing. After, the large JSON file was slimmed down and converted into a CSV with only two columns, tweet content and sport. After converting the JSON to CSV, I performed many cleaning techniques to make the data more homogenous. Finally, we cross-validated multiple machine learning models to determine the most successful for our use case. From our analysis, it was discovered that random forest performed the best for our use case and had an accuracy of about 85%. The repository can be viewed <a href="https://github.com/Jazli14/world-cup-ml">here.</a></p>
+      </div>
+      <div class="project-row">
+        <img class="right" src="images\online-shopping.gif" alt="online-shopping-img">
+        <h3>Amazon Review Sentiment Analysis</h3>
+        <p>In this project, my goal was to train a neural network on Amazon reviews within the video game sector to identify positive and negative reviews. The <a href="http://jmcauley.ucsd.edu/data/amazon/">data set</a> was already available for use and contained reviews from 1996-2014. To achieve my goal, I first split the data into two lists, one for the predictor variable being the review text and one for the criterion variable being either positive or negative. The data set used contained the number of stars given in the review, so I classified positive reviews as those greater than three stars and everything less than or equal to three stars as a negative review. I tokenized the reviews and created sequences ensuring each sequence was the same length by appending 0’s to short reviews and cutting off long reviews. Finally, I trained the neural network and achieved an accuracy of 88%. The repository can be viewed <a href="https://github.com/Umair-H/Amazon-Review-Sentiment-Analysis">here.</a></p>
+      </div>
+      <div class="project-row">
+        <img class="schematic" src="images\schematic.png" alt="schematic-img">
+        <h3>RFID Door Lock</h3>
+        <p>For this project I used an Arduino to create an RFID door lock. Each card has a different ID attached to it, so my program only accepts one sepecific card. When the correct card is scanned the led turns green and the motor turns. However, if an incorrect card is used, the led glows red and the door stays locked. Additional cards can be added after scanning the master card.</p>
+      </div>
+    </div>
+    <hr>
+    <iframe src="https://utoronto-my.sharepoint.com/personal/u_hussain_mail_utoronto_ca/_layouts/15/Doc.aspx?sourcedoc={7bc4ffd6-d405-43ce-b570-04481ac5f86b}&amp;action=embedview&amp;wdEmbedCode=1" width="700px" height="600px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <p class="contact-message">You can reach me via email, phone, or through LinkedIn. I look forward to speaking with you.</p>
+      <a class="btn" href="mailto:1851Umair@email.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/umair-hussain15">LinkedIn</a>
+    <a class="footer-link" href="credits.html">Credits</a>
+    <a class="footer-link" href="https://github.com/Umair-H">GitHub</a>
+    <p class="copyright">© Umair Hussain.</p>
+  </div>
+
+  <script type="text/javascript">
+
+  // List of sentences
+  var _CONTENT = [ "Programmer", "Developer", "Critical Thinker", "Problem Solver" ];
+
+  // Current sentence being processed
+  var _PART = 0;
+
+  // Character number of the current sentence being processed
+  var _PART_INDEX = 0;
+
+  // Holds the handle returned from setInterval
+  var _INTERVAL_VAL;
+
+  // Element that holds the text
+  var _ELEMENT = document.querySelector("#text");
+
+  // Implements typing effect
+  function Type() {
+  	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+  	_ELEMENT.innerHTML = text;
+  	_PART_INDEX++;
+
+  	// If full sentence has been displayed then start to delete the sentence after some time
+  	if(text === _CONTENT[_PART]) {
+  		clearInterval(_INTERVAL_VAL);
+  		setTimeout(function() {
+  			_INTERVAL_VAL = setInterval(Delete, 50);
+  		}, 1000);
+  	}
+  }
+
+  // Implements deleting effect
+  function Delete() {
+  	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+  	_ELEMENT.innerHTML = text;
+  	_PART_INDEX--;
+
+  	// If sentence has been deleted then start to display the next sentence
+  	if(text === '') {
+  		clearInterval(_INTERVAL_VAL);
+
+  		// If last sentence then display the first one, else move to the next
+  		if(_PART == (_CONTENT.length - 1))
+  			_PART = 0;
+  		else
+  			_PART++;
+  		_PART_INDEX = 0;
+
+  		// Start to display the next sentence after some time
+  		setTimeout(function() {
+  			_INTERVAL_VAL = setInterval(Type, 100);
+  		}, 200);
+  	}
+  }
+
+  // Start the typing effect on load
+  _INTERVAL_VAL = setInterval(Type, 100);
+
+</script>
+</body>
+
+</html>
