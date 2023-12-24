@@ -29,11 +29,30 @@
     <div class="profile">
       <img src="images\umair3-modified.png" height="300" width="300" alt="profile-img">
       <h2>Hello</h2>
-      <p class="intro">I am a second-year computer science and statistics student currently studying at the University of Toronto. I look forward to putting my theoretical knowledge to use in the ever-growing field of IT. My main interests are software development, data analysis, and machine learning. I hope to gain practical experience and further develop my knowledge in all of these aspects.</p>
+      <p class="intro">
+        As a dedicated student pursuing a dual major in Computer Science and Statistics, I bring a passion for the intersection of technology and data analysis to my academic journey. With a keen interest in machine learning, I am driven to explore the intricacies of data science and its applications. My coursework has equipped me with a strong foundation in programming, statistical modeling, and algorithmic problem-solving. Eager to contribute my skills and knowledge to real-world challenges, I am actively seeking opportunities to apply my expertise in machine learning and data analysis in practical settings.</p>
     </div>
     <hr>
     <div class="projects">
       <h2>My Projects</h2>
+      <div class="project-row">
+        <img class="left" src="images\emotions.gif" alt="emotions-img">
+        <h3>Text Scraper & Sentiment Analysis API</h3>
+        <p>In response to a pressing challenge faced by the up-and-coming startup, Mhapy, my team and I embarked on a collaborative venture to address a critical issue in the realm of mental health. Mhapy possessed a wealth of user data but lacked a convenient means of harnessing it to provide users with valuable insights into their communication patterns and overall emotional tone. Recognizing the significance of this predicament, our project aimed to bridge this gap by developing a practical solution. Leading a team of six, we set out to create an API that effectively utilized the data gleaned from the Mhapy app. My jobs were to manage the group’s priorities, being a product manager, and helping create the LSTM model. Our primary goal was to empower users with a tool that could analyze their text expressions, distinguishing between positive and negative sentiments. The resultant API, seamlessly integrated with Node.js and Flask, not only facilitated sentiment analysis but also presented users with graphical representations of their emotional tone over time. Leveraging cutting-edge technologies such as TensorFlow, PostgreSQL, AWS EC2, and S3 bucket, we ensured the robust hosting of the model. The project's distinctive feature lies in real-time notifications that alert users to instances of heightened negativity, fostering self-awareness and making strides towards a more accessible and user-centric approach to mental health therapy. This initiative reflects my leadership skills and technical proficiency in delivering pragmatic solutions to real-world challenges, particularly at the intersection of AI and mental health. Due to company privacy the code and related work cannot be shared.</p>
+      </div>
+      <div class="project-row">
+        <img class="right" src="images\right-decision.gif" alt="quiz-img">
+        <h3>Student Diagnostic Question Classifier</h3>
+        <p>In one of my recent projects, I took on the intricate task of developing a machine learning model tailored for educational diagnostics. The primary objective was to predict whether a specific student would answer a given diagnostic question correctly. However, the project came with its set of challenges, most notably the sparse nature of the available data.
+
+        To navigate this complexity, I delved into a variety of machine learning models, including KNN, item response theory, SVD, and matrix factorization. It became apparent early on that no single model could fully address the nuances of the problem. Consequently, I sought to leverage the strengths of each by experimenting with an ensemble approach, combining KNN, item response theory, and matrix factorization.
+
+        Acknowledging the room for improvement, I took the initiative to create a custom implementation of matrix factorization. This process involved a thoughtful analysis of the shortcomings observed in earlier models, allowing for a more tailored and nuanced solution. Rather than a showcase of achievements, this project served as a valuable learning experience, emphasizing adaptability and problem-solving.
+
+        Looking forward, my aim is not just to conclude the project but to continue its evolution. I'm particularly intrigued by the potential enhancements that could come from applying a Bayesian item response theory model. This reflects my commitment to ongoing exploration and refinement, driven by a genuine interest in improving the predictive capabilities of machine learning models in the context of educational diagnostics.
+         The mathematical analysis can be found <a href="files\Student_Diagnostic_Report.pdf">here.</a></p>
+        </p>
+      </div>
       <div class="project-row">
         <img class="left" src="images\air-pollution.gif" alt="air-pollution-img">
         <h3>Investigating the Impact of COVID-19 on City Air Quality Using AQHI</h3>
@@ -106,7 +125,7 @@
   <script type="text/javascript">
 
   // List of sentences
-  var _CONTENT = [ "Programmer", "Developer", "Critical Thinker", "Problem Solver" ];
+  var _CONTENT = [ "Developer", "Leader", "Critical Thinker", "Problem Solver" ];
 
   // Current sentence being processed
   var _PART = 0;
